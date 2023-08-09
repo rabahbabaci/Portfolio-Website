@@ -38,7 +38,7 @@ export default function About() {
   return (
     <>
       <Head>
-        <title>Minimal Portfolio Built with Nextjs | About Page</title>
+        <title>About Rabah</title>
         <meta
           name='description'
           content='Learn more about CodeBucks, a Next.js developer with a passion for 
@@ -46,7 +46,9 @@ export default function About() {
         full-stack development, front-end development, and back-end development.'
         />
       </Head>
+
       <TransitionEffect />
+
       <main
         className={`flex  w-full flex-col items-center justify-center dark:text-light`}
       >
@@ -65,18 +67,17 @@ export default function About() {
                 BIOGRAPHY
               </h2>
               <p className='font-medium '>
-                Hi, I&apos;m <strong>CodeBucks</strong>, a web developer and
-                UI/UX designer with a passion for creating beautiful,
-                functional, and user-centered digital experiences. With 4 years
-                of experience in the field. I am always looking for new and
-                innovative ways to bring my clients&apos; visions to life.
+                Hi 👋 I&apos;m <strong>Rabah</strong>, a software developer with
+                a passion for creating beautiful, functional, and user-centered
+                digital experiences. With 2 years of experience in the field. I
+                am always looking for new and innovative ways to bring my
+                clients&apos; visions to life. My specialties include quickly
+                learning new skills and programming languages, problem solving,
+                responsive design principles, website optimization and Model
+                View Controller (MVC) methods of organizing code ...etc.
               </p>
+
               <p className='my-4 font-medium'>
-                I believe that design is about more than just making things look
-                pretty – it&apos;s about solving problems and creating
-                intuitive, enjoyable experiences for users.
-              </p>
-              <p className='font-medium'>
                 Whether I&apos;m working on a website, mobile app, or other
                 digital product, I bring my commitment to design excellence and
                 user-centered thinking to every project I work on. I look
@@ -112,7 +113,7 @@ export default function About() {
             >
               <div className='flex flex-col items-end justify-center xl:items-center'>
                 <span className='inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl'>
-                  <AnimatedNumberFramerMotion value={40} />+
+                  <AnimatedNumberFramerMotion value={20} />+
                 </span>
                 <h2
                   className='mb-4 text-xl font-medium capitalize text-dark/75 dark:text-light/75 
@@ -124,7 +125,7 @@ export default function About() {
 
               <div className='flex flex-col items-end justify-center xl:items-center'>
                 <span className='inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl'>
-                  <AnimatedNumberFramerMotion value={50} />+
+                  <AnimatedNumberFramerMotion value={30} />+
                 </span>
                 <h2
                   className='mb-4 text-xl font-medium capitalize text-dark/75 dark:text-light/75 
@@ -136,7 +137,7 @@ export default function About() {
 
               <div className='flex flex-col items-end justify-center xl:items-center'>
                 <span className='inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl'>
-                  <AnimatedNumberFramerMotion value={4} />+
+                  <AnimatedNumberFramerMotion value={2} />+
                 </span>
                 <h2
                   className='mb-4 text-xl font-medium capitalize text-dark/75 dark:text-light/75 
