@@ -6,14 +6,14 @@ import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
 import lightBulb from '../../public/images/svgs/miscellaneous_icons_1.svg';
-import profilePic from '../../public/images/profile/developer-pic.png';
+import profilePic from '../../public/images/profile/landing.png';
 import TransitionEffect from '@/components/TransitionEffect';
 
 export default function Home() {
   return (
     <>
       <Head>
-        <title>Awesome Portfolio Built with Nextjs</title>
+        <title>Rabah Babaci</title>
         <meta
           name='description'
           content="Explore CodeBucks's Next.js developer portfolio and 
@@ -28,11 +28,11 @@ export default function Home() {
       >
         <Layout className='!pt-0 md:!pt-16 sm:!pt-16'>
           <div className='flex w-full items-start justify-between md:flex-col'>
-            <div className='w-1/2 lg:hidden md:inline-block md:w-full sm:mb-4'>
+            <div className='w-1/2 lg:hidden md:inline-block md:w-full mr-2 sm:mr-0'>
               <Image
                 src={profilePic}
                 alt='CodeBucks'
-                className='h-auto w-full rounded-full'
+                className='h-auto w-full'
                 sizes='100vw'
                 priority
               />

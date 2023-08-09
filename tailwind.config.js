@@ -18,7 +18,7 @@ module.exports = {
       colors: {
         dark: '#1b1b1b',
         light: '#f5f5f5',
-        primary: '#e86c4b', // #B63E96
+        primary: '#e91e63', // #B63E96
         primaryDark: '#58E6D9', // 80,230,217
       },
       animation: {
