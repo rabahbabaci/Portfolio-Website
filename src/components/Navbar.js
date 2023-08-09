@@ -46,7 +46,7 @@ const CustomMobileLink = ({ href, title, className = '', toggle }) => {
 
   return (
     <button
-      className={`${className}  rounded relative group lg:text-light lg:dark:text-dark`}
+      className={`${className} rounded relative group lg:text-light lg:dark:text-dark`}
       onClick={handleClick}
     >
       {title}
@@ -116,7 +116,7 @@ const Navbar = () => {
         >
           <motion.a
             target={'_blank'}
-            className='w-6 mx-3'
+            className='w-7 mx-3'
             href='https://github.com/rbabaci1'
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.9 }}
@@ -162,6 +162,7 @@ const Navbar = () => {
           </button>
         </nav>
       </div>
+
       {isOpen ? (
         <motion.div
           className='min-w-[70vw] sm:min-w-[90vw] flex justify-between items-center flex-col fixed top-1/2 left-1/2 -translate-x-1/2
@@ -249,7 +250,7 @@ const Navbar = () => {
         </motion.div>
       ) : null}
 
-      <div className='absolute left-[50%] top-2 translate-x-[-50%] '>
+      <div className='absolute left-[50%] top-2 translate-x-[-50%]'>
         <Logo />
       </div>
     </header>

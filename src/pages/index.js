@@ -44,10 +44,10 @@ export default function Home() {
                 className='!text-left !text-6xl xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-3xl'
               />
               <p className='my-4 text-base font-medium md:text-sm sm:!text-xs'>
-                As a skilled full-stack developer, I am dedicated to turning
-                ideas into innovative web applications. Explore my latest
-                projects and articles, showcasing my expertise in React.js and
-                web development.
+                As a proficient full-stack developer, I'm committed to realizing
+                ideas as cutting-edge software applications. Explore my latest
+                projects and articles, highlighting expertise in software
+                development and technologies such as React.js.
               </p>
 
               <div className='mt-2 flex items-center self-start lg:self-center'>
@@ -65,7 +65,8 @@ export default function Home() {
                 </Link>
 
                 <Link
-                  href='mailto:codebucks27@gmail.com'
+                  href='mailto:4rabah@gmail.com'
+                  target='_blank'
                   className='ml-4 text-lg font-medium capitalize text-dark underline 
                   dark:text-light md:text-base'
                 >
