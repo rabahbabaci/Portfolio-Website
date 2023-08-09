@@ -23,6 +23,7 @@ export default function Home() {
       </Head>
 
       <TransitionEffect />
+
       <article
         className={`flex min-h-screen items-center text-dark dark:text-light sm:items-start`}
       >

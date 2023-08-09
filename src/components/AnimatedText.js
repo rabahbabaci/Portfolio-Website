@@ -1,5 +1,5 @@
-import { motion } from "framer-motion";
-import React from "react";
+import { motion } from 'framer-motion';
+import React from 'react';
 
 const quote = {
   hidden: {
@@ -28,22 +28,26 @@ const singleWord = {
   },
 };
 
-const AnimatedText = ({ text, className = "" }) => {
+const AnimatedText = ({ text, className = '' }) => {
   return (
-    <div className="py-2 w-full mx-auto flex flex-col items-center justify-center  text-center  
-    overflow-hidden sm:py-0">
+    <div
+      className='py-2 w-full mx-auto flex flex-col items-center justify-center  text-center  
+    overflow-hidden sm:py-0'
+    >
       <motion.h1
         className={`inline-block text-dark dark:text-light
       text-8xl font-bold w-full capitalize  ${className} xl:text-6xl`}
         variants={quote}
-        initial="hidden"
-        animate="visible"
+        initial='hidden'
+        animate='visible'
       >
-        {text.split(" ").map((char, index) => {
+        {text.split(' ').map((char, index) => {
           return (
             <motion.span
-              className="inline-block"
-              key={char + "-" + index}
+              className={`inline-block ${
+                index === 5 || index === 7 ? 'text-primary' : ''
+              }`}
+              key={char + '-' + index}
               variants={singleWord}
             >
               {char}&nbsp;

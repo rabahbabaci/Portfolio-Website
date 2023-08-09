@@ -23,7 +23,7 @@ const CustomLink = ({ href, title, className = '' }) => {
       {title}
       <span
         className={`
-              inline-block h-[1px]  bg-dark absolute left-0 -bottom-0.5 
+              inline-block h-[2px]  bg-dark absolute left-0 -bottom-0.5 
               group-hover:w-full transition-[width] ease duration-300 dark:bg-light
               ${
                 router.asPath === href ? 'w-full' : ' w-0'
@@ -75,9 +75,8 @@ const Navbar = () => {
 
   return (
     <header
-      className='w-full flex items-center justify-between px-32 py-8 font-medium z-10 dark:text-light
-    lg:px-16 relative z-1 md:px-12 sm:px-8
-    '
+      className='sticky top-0 bg-gray w-full flex items-center justify-between px-32 py-8 font-medium z-10 dark:text-light
+    lg:px-16 relative z-1 md:px-12 sm:px-8'
     >
       <button
         type='button'
