@@ -5,8 +5,8 @@ import { motion } from 'framer-motion';
 import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
-import proj1 from '../../public/images/projects/shareMe.png';
-import proj2 from '../../public/images/projects/nft-collection-website-cover-image.jpg';
+import proj1 from '../../public/images/projects/shareMe.jpg';
+import proj2 from '../../public/images/projects/quickFix.jpg';
 import proj3 from '../../public/images/projects/fashion-studio-website.jpg';
 import proj4 from '../../public/images/projects/portfolio-cover-image.jpg';
 import proj5 from '../../public/images/projects/agency-website-cover-image.jpg';
@@ -17,7 +17,7 @@ const FramerImage = motion(Image);
 
 const FeaturedProject = ({ type, title, summary, img, link, github }) => {
   return (
-    <article className='relative flex w-full items-center  justify-between rounded-3xl rounded-br-2xl border border-solid border-dark bg-light p-11 shadow-2xl  dark:border-light dark:bg-dark  lg:flex-col lg:p-8 xs:rounded-2xl  xs:rounded-br-3xl xs:p-4'>
+    <article className='relative flex w-full h-auto items-center  justify-between rounded-3xl rounded-br-2xl border border-solid border-dark bg-light p-11 shadow-2xl  dark:border-light dark:bg-dark  lg:flex-col lg:p-8 xs:rounded-2xl  xs:rounded-br-3xl xs:p-4'>
       <div
         className='absolute  top-0 -right-3 -z-10 h-[103%] w-[101%] rounded-[2.5rem] rounded-br-3xl bg-dark
          dark:bg-light  xs:-right-2 xs:h-[102%] xs:w-[100%]
@@ -31,7 +31,7 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
       >
         <FramerImage
           src={img}
-          className='h-full w-full'
+          className='h-auto w-full'
           alt={title}
           whileHover={{ scale: 1.05 }}
           transition={{ duration: 0.2 }}
@@ -89,7 +89,7 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
 const Project = ({ title, type, img, link, github }) => {
   return (
     <article
-      className='relative flex w-full flex-col items-center justify-center rounded-2xl  rounded-br-2xl 
+      className='relative flex h-auto w-full flex-col items-center justify-center rounded-2xl  rounded-br-2xl 
       border  border-solid  border-dark bg-light p-6  shadow-2xl dark:border-light dark:bg-dark 
       xs:p-4
       '
@@ -116,6 +116,7 @@ const Project = ({ title, type, img, link, github }) => {
               33vw'
         />
       </Link>
+
       <div className='mt-4 flex w-full flex-col items-start justify-between'>
         <span className='text-xl font-medium text-primary dark:text-primaryDark lg:text-lg md:text-base'>
           {type}
@@ -147,7 +148,9 @@ const Project = ({ title, type, img, link, github }) => {
             className='w-8 md:w-6'
             aria-label={title}
           >
-            <GithubIcon />
+            <motion.section whileHover={{ y: -2 }} whileTap={{ scale: 0.9 }}>
+              <GithubIcon />
+            </motion.section>
           </Link>
         </div>
       </div>
@@ -180,7 +183,7 @@ export default function Projects() {
               <FeaturedProject
                 type='Featured Project'
                 title='ShareMe'
-                summary="A dynamic social media app powered by React, Tailwind CSS, and a suite of advanced tools. Leveraged Redux Toolkit and Redux Persist for state management, seamlessly integrated Google Auth2 Login, and utilized Sanity CMS for content management. Users enjoy seamless posting, editing, and commenting on their own and other's posts, enhancing the social interaction experience."
+                summary="A dynamic social media app powered by React JS, Tailwind CSS, and a suite of advanced tools. Leveraged Redux Toolkit and Redux Persist for state management, seamlessly integrated Google Auth2 Login, and utilized Sanity CMS for content management. Users enjoy seamless posting, editing, and commenting on their own and other's posts, enhancing the social interaction experience."
                 img={proj1}
                 link='https://shareme-picz.netlify.app/login'
                 github='https://github.com/rbabaci1/ShareMe'
@@ -189,11 +192,11 @@ export default function Projects() {
 
             <div className='col-span-6 sm:col-span-12'>
               <Project
-                type='Website Template'
-                title='NFT collection Website'
+                type='Website'
+                title='Quick Fix Car Glass'
                 img={proj2}
-                link='https://devdreaming.com/videos/create-nft-collection-website-reactjs'
-                github='https://github.com/codebucks27/The-Weirdos-NFT-Website-Starter-Code'
+                link='https://quickfixcarglass.com'
+                github='https://github.com/rbabaci1/quick-fix-car-glass'
               />
             </div>
             <div className='col-span-6 sm:col-span-12'>
