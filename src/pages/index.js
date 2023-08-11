@@ -16,7 +16,7 @@ export default function Home() {
         <title>Rabah Babaci</title>
         <meta
           name='description'
-          content="Explore CodeBucks's Next.js developer portfolio and 
+          content="Explore Rabah Babaci's Next.js developer portfolio and 
         discover the latest webapp projects and software engineering articles. 
         Showcase your skills as a full-stack developer and software engineer."
         />
@@ -47,7 +47,7 @@ export default function Home() {
                 As a proficient full-stack developer, I'm committed to realizing
                 ideas as cutting-edge software applications. Explore my latest
                 projects and articles, highlighting expertise in software
-                development and technologies such as React.js.
+                development and technologies such as React.js!
               </p>
 
               <div className='mt-2 flex items-center self-start lg:self-center'>

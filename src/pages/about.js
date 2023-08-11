@@ -63,9 +63,10 @@ export default function About() {
               className='col-span-3 flex flex-col items-start justify-start xl:col-span-4 md:order-2 
             md:col-span-8'
             >
-              <h2 className='mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light/75'>
+              <h2 className='mb-4 text-xl font-bold uppercase text-dark/75 dark:text-light/75'>
                 BIOGRAPHY
               </h2>
+
               <p className='font-medium '>
                 Hi 👋 I&apos;m <strong>Rabah</strong>, a software developer with
                 a passion for creating beautiful, functional, and user-centered
