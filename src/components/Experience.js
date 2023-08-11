@@ -14,7 +14,7 @@ const Details = ({ position, company, companyLink, time, address, work }) => {
       <motion.div
         initial={{ y: 50 }}
         whileInView={{ y: 0 }}
-        transition={{ duration: 0.5, type: 'spring' }}
+        transition={{ duration: 0.5, tiype: 'spring' }}
       >
         <h3 className='capitalize font-bold text-2xl sm:text-xl xs:text-lg'>
           {position}{' '}
@@ -61,8 +61,8 @@ const Experience = () => {
             company='Smoove'
             companyLink='https://smoove.homes'
             time='2022-Present'
-            address='Oakland, CA'
-            work="Worked on a team responsible for developing new features for Google's search engine, including improving the accuracy and relevance of search results and developing new tools for data analysis and visualization."
+            address='Remote'
+            work="Integral in creating Smoove's online moving platform. Led front-end and back-end work, enabling user-friendly features like registration, booking, tracking, and payments. Collaborated for seamless UX, optimized visuals, and effective testing. Aligned with stakeholders for brand cohesion and impactful outcome."
           />
 
           <Details
@@ -71,10 +71,7 @@ const Experience = () => {
             companyLink='https://upwork.com'
             time='December 2021-November 2022'
             address='Remote'
-            work='Worked on a team responsible for developing a new mobile app
-              feature that allowed users to create and share short-form video
-              content, including designing and implementing a new user interface
-              and developing the backend infrastructure to support the feature.'
+            work='As an Upwork freelance web developer, I design and build company websites. I create wirep-frames, optimize graphics, and collaborate with clients to align with their brand and goals. Thorough testing and debugging ensure seamless website functionality, polished, functional sites.'
           />
         </ul>
       </div>

@@ -52,7 +52,7 @@ export default function Home() {
 
               <div className='mt-2 flex items-center self-start lg:self-center'>
                 <Link
-                  href='/dummy.pdf'
+                  href='https://www.canva.com/design/DAETP8gR9Qg/d8XYJu9tejXUctWe5PY7fg/view?utm_content=DAETP8gR9Qg&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink'
                   target={'_blank'}
                   className={`flex items-center rounded-lg border-2 border-solid bg-dark p-2.5 px-6 text-lg font-semibold
             capitalize text-light hover:border-dark hover:bg-transparent hover:text-dark 

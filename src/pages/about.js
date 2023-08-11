@@ -41,8 +41,7 @@ export default function About() {
         <title>About Rabah</title>
         <meta
           name='description'
-          content='Learn more about CodeBucks, a Next.js developer with a passion for 
-        creating innovative solutions. Discover tips for building a developer portfolio and insights on 
+          content='Learn more about Rabah Babaci, a Software Developer developer with a passion for creating innovative solutions. Discover tips for building a developer portfolio and insights on 
         full-stack development, front-end development, and back-end development.'
         />
       </Head>
@@ -50,7 +49,7 @@ export default function About() {
       <TransitionEffect />
 
       <main
-        className={`flex  w-full flex-col items-center justify-center dark:text-light`}
+        className={`flex w-full flex-col items-center justify-center dark:text-light`}
       >
         <Layout className='pt-16'>
           <AnimatedText
@@ -98,13 +97,12 @@ export default function About() {
         dark:bg-light  '
               />
               <Image
-                className='h-auto w-full rounded-2xl'
+                className='h-auto w-full rounded-2xl bg-dark'
                 src={profile}
                 alt='Codebucks'
                 sizes='(max-width: 768px) 100vw,
               (max-width: 1200px) 50vw,
               33vw'
-                style={{ background: 'black' }}
                 priority
               />
             </div>
@@ -114,7 +112,7 @@ export default function About() {
             >
               <div className='flex flex-col items-end justify-center xl:items-center'>
                 <span className='inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl'>
-                  <AnimatedNumberFramerMotion value={20} />+
+                  <AnimatedNumberFramerMotion value={15} />+
                 </span>
                 <h2
                   className='mb-4 text-xl font-medium capitalize text-dark/75 dark:text-light/75 
@@ -126,7 +124,7 @@ export default function About() {
 
               <div className='flex flex-col items-end justify-center xl:items-center'>
                 <span className='inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl'>
-                  <AnimatedNumberFramerMotion value={30} />+
+                  <AnimatedNumberFramerMotion value={20} />+
                 </span>
                 <h2
                   className='mb-4 text-xl font-medium capitalize text-dark/75 dark:text-light/75 
