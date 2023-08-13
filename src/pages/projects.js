@@ -7,8 +7,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 import proj1 from '../../public/images/projects/shareMe.jpg';
 import proj2 from '../../public/images/projects/quickFix.jpg';
-import proj3 from '../../public/images/projects/fashion-studio-website.jpg';
-import proj4 from '../../public/images/projects/portfolio-cover-image.jpg';
+import proj3 from '../../public/images/projects/conway.png';
+import proj4 from '../../public/images/projects/audio.jpg';
 import proj5 from '../../public/images/projects/agency-website-cover-image.jpg';
 import proj6 from '../../public/images/projects/devdreaming.jpg';
 import TransitionEffect from '@/components/TransitionEffect';
@@ -182,11 +182,21 @@ export default function Projects() {
             <div className='col-span-12'>
               <FeaturedProject
                 type='Featured Project'
-                title='ShareMe'
+                title='SHARE ME'
                 summary="A dynamic social media app powered by React JS, Tailwind CSS, and a suite of advanced tools. Leveraged Redux Toolkit and Redux Persist for state management, seamlessly integrated Google Auth2 Login, and utilized Sanity CMS for content management. Users enjoy seamless posting, editing, and commenting on their own and other's posts, enhancing the social interaction experience."
                 img={proj1}
                 link='https://shareme-picz.netlify.app/login'
                 github='https://github.com/rbabaci1/ShareMe'
+              />
+            </div>
+
+            <div className='col-span-6 sm:col-span-12'>
+              <Project
+                type='Cellular Automaton Simulation'
+                title='Conway Game Of Life'
+                img={proj3}
+                link='https://conway-game-of-life-roan.vercel.app'
+                github='https://github.com/rbabaci1/Conway-s-Game-Of-Life'
               />
             </div>
 
@@ -199,25 +209,18 @@ export default function Projects() {
                 github='https://github.com/rbabaci1/quick-fix-car-glass'
               />
             </div>
-            <div className='col-span-6 sm:col-span-12'>
-              <Project
-                type='Website'
-                title='Fashion Studio Website'
-                img={proj3}
-                link='https://devdreaming.com/videos/build-stunning-fashion-studio-website-with-reactJS-locomotive-scroll-gsap'
-                github='https://github.com/codebucks27/wibe-studio'
-              />
-            </div>
+
             <div className='col-span-12'>
               <FeaturedProject
-                type='Portfolio Website'
-                title='React Portfolio Website'
-                summary='A professional portfolio website using React JS, Framer-motion, and Styled-components. It has smooth page transitions, cool background effects, unique design and it is mobile responsive.'
+                type='E-commerce Website'
+                title='AUDIO OASIS'
+                summary='Discover Audio Oasis, a cutting-edge E-commerce platform where technology meets shopping. Created with precision using Next.js for seamless performance, Sanity for flexible content management, and Stripe for secure payments. Dive into a world of audio and electronic accessories, from speakers to smartwatches, headphones, and more. Elevate your shopping experience with a fusion of innovation and style.'
                 img={proj4}
-                link='https://devdreaming.com/videos/build-stunning-portfolio-website-react-js-framer-motion'
-                github='https://github.com/codebucks27/react-portfolio-final'
+                link='https://ecommerce-omega-peach.vercel.app'
+                github='https://github.com/rbabaci1/Audio_Oasis'
               />
             </div>
+
             <div className='col-span-6 sm:col-span-12'>
               <Project
                 type='Website Template'
@@ -227,6 +230,7 @@ export default function Projects() {
                 github='https://github.com/codebucks27/wibe-studio'
               />
             </div>
+
             <div className='col-span-6 sm:col-span-12'>
               <Project
                 type='Blog Website'
