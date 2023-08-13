@@ -9,8 +9,8 @@ import proj1 from '../../public/images/projects/shareMe.jpg';
 import proj2 from '../../public/images/projects/quickFix.jpg';
 import proj3 from '../../public/images/projects/conway.png';
 import proj4 from '../../public/images/projects/audio.jpg';
-import proj5 from '../../public/images/projects/agency-website-cover-image.jpg';
-import proj6 from '../../public/images/projects/devdreaming.jpg';
+import proj5 from '../../public/images/projects/portfolio.png';
+import proj6 from '../../public/images/projects/todo.jpg';
 import TransitionEffect from '@/components/TransitionEffect';
 
 const FramerImage = motion(Image);
@@ -223,21 +223,21 @@ export default function Projects() {
 
             <div className='col-span-6 sm:col-span-12'>
               <Project
-                type='Website Template'
+                type='Portfolio Website'
                 img={proj5}
-                title='Agency Website Template'
-                link='https://devdreaming.com/videos/build-stunning-fashion-studio-website-with-reactJS-locomotive-scroll-gsap'
-                github='https://github.com/codebucks27/wibe-studio'
+                title='React Portfolio Website'
+                link='https://portfolio-rbabaci1.vercel.app/'
+                github='https://github.com/rbabaci1/portfolio'
               />
             </div>
 
             <div className='col-span-6 sm:col-span-12'>
               <Project
-                type='Blog Website'
+                type='Todo-List Website'
                 img={proj6}
-                title='DevDreaming'
-                link='https://devdreaming.com'
-                github='https://github.com/codebucks27'
+                title='You Can Do It'
+                link='https://youcandoit.netlify.app'
+                github='https://github.com/rbabaci1/Youcandoit_TodoList'
               />
             </div>
           </div>
