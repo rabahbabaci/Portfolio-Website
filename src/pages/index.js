@@ -38,6 +38,7 @@ export default function Home() {
                 priority
               />
             </div>
+
             <div className='flex w-1/2 flex-col items-center self-center lg:w-full lg:text-center'>
               <AnimatedText
                 text='Turning vision into reality with code and design.'
