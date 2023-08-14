@@ -11,6 +11,7 @@ import {
 } from './Icons';
 import { motion } from 'framer-motion';
 import { useThemeSwitch } from './Hooks/useThemeSwitch';
+import { HireMe } from './HireMe';
 
 const CustomLink = ({ href, title, className = '' }) => {
   const router = useRouter();
@@ -18,7 +19,7 @@ const CustomLink = ({ href, title, className = '' }) => {
   return (
     <Link
       href={href}
-      className={`${className}  rounded relative group lg:text-light lg:dark:text-dark`}
+      className={`${className} rounded relative group lg:text-light lg:dark:text-dark`}
     >
       {title}
       <span
@@ -86,16 +87,19 @@ const Navbar = () => {
         onClick={handleClick}
       >
         <span className='sr-only'>Open main menu</span>
+
         <span
           className={`bg-dark dark:bg-light block h-0.5 w-6 rounded-sm transition-all duration-300 ease-out ${
             isOpen ? 'rotate-45 translate-y-1' : '-translate-y-0.5'
           }`}
         ></span>
+
         <span
           className={`bg-dark dark:bg-light block h-0.5 w-6 rounded-sm transition-all duration-300 ease-out ${
             isOpen ? 'opacity-0' : 'opacity-100'
           } my-0.5`}
         ></span>
+
         <span
           className={`bg-dark dark:bg-light block h-0.5 w-6 rounded-sm transition-all duration-300 ease-out ${
             isOpen ? '-rotate-45 -translate-y-1' : 'translate-y-0.5'
@@ -110,10 +114,7 @@ const Navbar = () => {
           <CustomLink className='mx-4' href='/projects' title='Projects' />
           <CustomLink className='ml-4' href='/articles' title='Articles' />
         </nav>
-        <nav
-          className='flex items-center justify-center flex-wrap lg:mt-2
-      '
-        >
+        <nav className='flex items-center justify-center flex-wrap lg:mt-2'>
           <motion.a
             target={'_blank'}
             className='w-7 mx-3'
@@ -233,6 +234,7 @@ const Navbar = () => {
             >
               <LinkedInIcon />
             </motion.a>
+
             <button
               onClick={() => setMode(mode === 'light' ? 'dark' : 'light')}
               className={`w-6 h-6 ease m-1 ml-3 sm:mx-1 flex items-center justify-center rounded-full p-1  
@@ -253,6 +255,8 @@ const Navbar = () => {
       <div className='absolute left-[50%] top-2 translate-x-[-50%]'>
         <Logo />
       </div>
+
+      <HireMe />
     </header>
   );
 };
