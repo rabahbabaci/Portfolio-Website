@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import AnimatedText from '@/components/AnimatedText';
 import { LinkArrow } from '@/components/Icons';
 import Layout from '@/components/Layout';
@@ -7,9 +8,14 @@ import Link from 'next/link';
 import lightBulb from '../../public/images/svgs/miscellaneous_icons_1.svg';
 import profilePic from '../../public/images/profile/landing.png';
 import TransitionEffect from '@/components/TransitionEffect';
-import { motion } from 'framer-motion';
 
 export default function Home() {
+  const [imageLoaded, setImageLoaded] = useState(false);
+
+  const handleImageLoad = () => {
+    setImageLoaded(true);
+  };
+
   return (
     <>
       <Head>
@@ -27,62 +33,61 @@ export default function Home() {
       <article
         className={`flex min-h-screen items-center text-dark dark:text-light sm:items-start`}
       >
-        i
         <Layout className='!pt-0 md:!pt-16 sm:!pt-16'>
           <div className='flex w-full items-start justify-between md:flex-col'>
-            <motion.div
-              className='w-1/2 lg:hidden md:inline-block md:w-full mr-2 sm:mr-0'
-              initial={{ opacity: 0, scale: 0.5 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.5 }}
-            >
+            <div className='w-1/2 lg:hidden md:inline-block md:w-full mr-2 sm:mr-0'>
               <Image
                 src={profilePic}
                 alt='Rabah profile picture'
                 className='h-auto w-full'
                 sizes='100vw'
                 priority
+                loading='eager'
+                onLoad={handleImageLoad}
               />
-            </motion.div>
+            </div>
 
-            <div className='flex w-1/2 flex-col items-center self-center lg:w-full lg:text-center'>
-              <AnimatedText
-                text='Turning vision into reality with code and design.'
-                className='!text-left !text-6xl xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-3xl'
-              />
-              <p className='my-4 text-base font-medium md:text-sm sm:!text-xs'>
-                As a proficient full-stack developer, I&apos;m committed to
-                realizing ideas as cutting-edge software applications. Explore
-                my latest projects and articles, highlighting expertise in
-                software development and technologies such as React.js!
-              </p>
+            {imageLoaded ? (
+              <div className='flex w-1/2 flex-col items-center self-center lg:w-full lg:text-center'>
+                <AnimatedText
+                  text='Turning vision into reality with code and design.'
+                  className='!text-left !text-6xl xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-3xl'
+                />
+                <p className='my-4 text-base font-medium md:text-sm sm:!text-xs'>
+                  As a proficient full-stack developer, I&apos;m committed to
+                  realizing ideas as cutting-edge software applications. Explore
+                  my latest projects and articles, highlighting expertise in
+                  software development and technologies such as React.js!
+                </p>
 
-              <div className='mt-2 flex items-center self-start lg:self-center'>
-                <Link
-                  href='https://www.canva.com/design/DAETP8gR9Qg/d8XYJu9tejXUctWe5PY7fg/view?utm_content=DAETP8gR9Qg&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink'
-                  target={'_blank'}
-                  className={`flex items-center rounded-lg border-2 border-solid bg-dark p-2.5 px-6 text-lg font-semibold
+                <div className='mt-2 flex items-center self-start lg:self-center'>
+                  <Link
+                    href='https://www.canva.com/design/DAETP8gR9Qg/d8XYJu9tejXUctWe5PY7fg/view?utm_content=DAETP8gR9Qg&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink'
+                    target={'_blank'}
+                    className={`flex items-center rounded-lg border-2 border-solid bg-dark p-2.5 px-6 text-lg font-semibold
             capitalize text-light hover:border-dark hover:bg-transparent hover:text-dark 
             dark:bg-light dark:text-dark dark:hover:border-light dark:hover:bg-dark dark:hover:text-light
             md:p-2 md:px-4 md:text-base
              `}
-                  download
-                >
-                  Resume <LinkArrow className='ml-1 !w-6 md:!w-4' />
-                </Link>
+                    download
+                  >
+                    Resume <LinkArrow className='ml-1 !w-6 md:!w-4' />
+                  </Link>
 
-                <Link
-                  href='mailto:4rabah@gmail.com'
-                  target='_blank'
-                  className='ml-4 text-lg font-medium capitalize text-dark underline 
+                  <Link
+                    href='mailto:4rabah@gmail.com'
+                    target='_blank'
+                    className='ml-4 text-lg font-medium capitalize text-dark underline 
                   dark:text-light md:text-base'
-                >
-                  Contact
-                </Link>
+                  >
+                    Contact
+                  </Link>
+                </div>
               </div>
-            </div>
+            ) : null}
           </div>
         </Layout>
+
         <div className='absolute right-8 bottom-8 inline-block w-24 md:hidden'>
           <Image
             className='relative h-auto w-full'
