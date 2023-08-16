@@ -10,12 +10,6 @@ import profilePic from '../../public/images/profile/landing.png';
 import TransitionEffect from '@/components/TransitionEffect';
 
 export default function Home() {
-  const [imageLoaded, setImageLoaded] = useState(false);
-
-  const handleImageLoad = () => {
-    setImageLoaded(true);
-  };
-
   return (
     <>
       <Head>
@@ -47,44 +41,42 @@ export default function Home() {
               />
             </div>
 
-            {imageLoaded ? (
-              <div className='flex w-1/2 flex-col items-center self-center lg:w-full lg:text-center'>
-                <AnimatedText
-                  text='Turning vision into reality with code and design.'
-                  className='!text-left !text-6xl xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-3xl'
-                />
-                <p className='my-4 text-base font-medium md:text-sm sm:!text-xs'>
-                  As a proficient full-stack developer, I&apos;m committed to
-                  realizing ideas as cutting-edge software applications. Explore
-                  my latest projects and articles, highlighting expertise in
-                  software development and technologies such as React.js!
-                </p>
+            <div className='flex w-1/2 flex-col items-center self-center lg:w-full lg:text-center'>
+              <AnimatedText
+                text='Turning vision into reality with code and design.'
+                className='!text-left !text-6xl xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-3xl'
+              />
+              <p className='my-4 text-base font-medium md:text-sm sm:!text-xs'>
+                As a proficient full-stack developer, I&apos;m committed to
+                realizing ideas as cutting-edge software applications. Explore
+                my latest projects and articles, highlighting expertise in
+                software development and technologies such as React.js!
+              </p>
 
-                <div className='mt-2 flex items-center self-start lg:self-center'>
-                  <Link
-                    href='https://www.canva.com/design/DAETP8gR9Qg/d8XYJu9tejXUctWe5PY7fg/view?utm_content=DAETP8gR9Qg&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink'
-                    target={'_blank'}
-                    className={`flex items-center rounded-lg border-2 border-solid bg-dark p-2.5 px-6 text-lg font-semibold
+              <div className='mt-2 flex items-center self-start lg:self-center'>
+                <Link
+                  href='https://www.canva.com/design/DAETP8gR9Qg/d8XYJu9tejXUctWe5PY7fg/view?utm_content=DAETP8gR9Qg&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink'
+                  target={'_blank'}
+                  className={`flex items-center rounded-lg border-2 border-solid bg-dark p-2.5 px-6 text-lg font-semibold
             capitalize text-light hover:border-dark hover:bg-transparent hover:text-dark 
             dark:bg-light dark:text-dark dark:hover:border-light dark:hover:bg-dark dark:hover:text-light
             md:p-2 md:px-4 md:text-base
              `}
-                    download
-                  >
-                    Resume <LinkArrow className='ml-1 !w-6 md:!w-4' />
-                  </Link>
+                  download
+                >
+                  Resume <LinkArrow className='ml-1 !w-6 md:!w-4' />
+                </Link>
 
-                  <Link
-                    href='mailto:4rabah@gmail.com'
-                    target='_blank'
-                    className='ml-4 text-lg font-medium capitalize text-dark underline 
+                <Link
+                  href='mailto:4rabah@gmail.com'
+                  target='_blank'
+                  className='ml-4 text-lg font-medium capitalize text-dark underline 
                   dark:text-light md:text-base'
-                  >
-                    Contact
-                  </Link>
-                </div>
+                >
+                  Contact
+                </Link>
               </div>
-            ) : null}
+            </div>
           </div>
         </Layout>
 
