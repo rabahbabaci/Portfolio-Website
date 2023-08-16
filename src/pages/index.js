@@ -1,5 +1,4 @@
 import AnimatedText from '@/components/AnimatedText';
-import { HireMe } from '@/components/HireMe';
 import { LinkArrow } from '@/components/Icons';
 import Layout from '@/components/Layout';
 import Head from 'next/head';
@@ -8,6 +7,7 @@ import Link from 'next/link';
 import lightBulb from '../../public/images/svgs/miscellaneous_icons_1.svg';
 import profilePic from '../../public/images/profile/landing.png';
 import TransitionEffect from '@/components/TransitionEffect';
+import { motion } from 'framer-motion';
 
 export default function Home() {
   return (
@@ -27,17 +27,23 @@ export default function Home() {
       <article
         className={`flex min-h-screen items-center text-dark dark:text-light sm:items-start`}
       >
+        i
         <Layout className='!pt-0 md:!pt-16 sm:!pt-16'>
           <div className='flex w-full items-start justify-between md:flex-col'>
-            <div className='w-1/2 lg:hidden md:inline-block md:w-full mr-2 sm:mr-0'>
+            <motion.div
+              className='w-1/2 lg:hidden md:inline-block md:w-full mr-2 sm:mr-0'
+              initial={{ opacity: 0, scale: 0.5 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.5 }}
+            >
               <Image
                 src={profilePic}
-                alt='CodeBucks'
+                alt='Rabah profile picture'
                 className='h-auto w-full'
                 sizes='100vw'
                 priority
               />
-            </div>
+            </motion.div>
 
             <div className='flex w-1/2 flex-col items-center self-center lg:w-full lg:text-center'>
               <AnimatedText
@@ -77,7 +83,6 @@ export default function Home() {
             </div>
           </div>
         </Layout>
-
         <div className='absolute right-8 bottom-8 inline-block w-24 md:hidden'>
           <Image
             className='relative h-auto w-full'
