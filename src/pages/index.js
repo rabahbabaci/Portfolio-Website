@@ -34,9 +34,8 @@ export default function Home() {
                 alt='Rabah profile picture'
                 className='h-auto w-full'
                 sizes='100vw'
-                priority
                 loading='eager'
-                onLoad={handleImageLoad}
+                priority
               />
             </div>
 
