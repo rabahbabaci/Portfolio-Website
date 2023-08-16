@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import AnimatedText from '@/components/AnimatedText';
 import { LinkArrow } from '@/components/Icons';
 import Layout from '@/components/Layout';
