@@ -66,7 +66,7 @@ const Experience = () => {
           />
 
           <Details
-            position='Freelance Software Developer'
+            position='Software Developer'
             company='UpWork'
             companyLink='https://upwork.com'
             time='June 2021-November 2022'
