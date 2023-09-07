@@ -69,7 +69,7 @@ const Experience = () => {
             position='Freelance Software Developer'
             company='UpWork'
             companyLink='https://upwork.com'
-            time='December 2021-November 2022'
+            time='June 2021-November 2022'
             address='Remote'
             work='As an Upwork freelance web developer, I design and build company websites. I create wirep-frames, optimize graphics, and collaborate with clients to align with their brand and goals. Thorough testing and debugging ensure seamless website functionality, polished, functional sites.'
           />
