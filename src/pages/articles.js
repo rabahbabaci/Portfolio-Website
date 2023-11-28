@@ -34,7 +34,7 @@ const MovingImg = ({ title, img, link }) => {
       <Link
         href={link}
         target={'_blank'}
-        className='relative'
+        className='relative sm:w-full'
         onMouseMove={handleMouse}
         onMouseLeave={handleMouseLeave}
       >
