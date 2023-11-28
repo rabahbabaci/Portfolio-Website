@@ -4,6 +4,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import blog1 from '../../public/images/articles/redux-persist.png';
 import blog2 from '../../public/images/articles/lambda-school.png';
+import blog3 from '../../public/images/articles/decImpProg.png';
 
 import Layout from '@/components/Layout';
 import Link from 'next/link';
@@ -146,6 +147,13 @@ export default function Articles() {
 
           <ul className='grid grid-cols-2 gap-16 lg:gap-8 md:grid-cols-1 md:gap-y-16'>
             <FeaturedArticle
+              img={blog3}
+              title='The Rhythmic Tale of Imperative vs Declarative Programming 🌐🎩'
+              time='3 min read'
+              summary='Explore the playful contrast between Imperative and Declarative programming, using creative analogies and ReactJS examples. Understand the distinct approaches of each paradigm in crafting effective code.'
+              link='https://rabahbabaci.medium.com/the-rhythmic-tale-of-imperative-vs-declarative-programming-ce22061756ca'
+            />
+            <FeaturedArticle
               img={blog1}
               title='Hydrate Your Redux Store'
               time='5 min read'
@@ -167,6 +175,12 @@ export default function Articles() {
           </h2>
 
           <ul className='flex flex-col items-center relative'>
+            <Article
+              title='The Rhythmic Tale of Imperative vs Declarative Programming 🌐🎩'
+              img={blog3}
+              date='November 23, 2023'
+              link='https://rabahbabaci.medium.com/the-rhythmic-tale-of-imperative-vs-declarative-programming-ce22061756ca'
+            />
             <Article
               title='Hydrate Your Redux Store'
               img={blog1}
