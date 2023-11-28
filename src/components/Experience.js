@@ -60,8 +60,8 @@ const Experience = () => {
             position='Full Stack Web Developer'
             company='Smoove'
             companyLink='https://smoove.homes'
-            time='2022-Present'
-            address='Remote'
+            time='November 2022-November 2023'
+            address='Hybrid'
             work="Integral in creating Smoove's online moving platform. Led front-end and back-end work, enabling user-friendly features like registration, booking, tracking, and payments. Collaborated for seamless UX, optimized visuals, and effective testing. Aligned with stakeholders for brand cohesion and impactful outcome."
           />
 
