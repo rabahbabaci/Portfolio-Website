@@ -54,12 +54,12 @@ const Experience = () => {
 				/>
 				<ul className="w-full flex flex-col items-start justify-between ml-4 xs:ml-2">
 					<Details
-						position="Founder and Lead Product Developer"
+						position="Full Stack Engineer"
 						company="Smoove"
 						companyLink="https://smoove.homes"
-						time="November 2022 - December 2023"
+						time="November 2022 - February 2024"
 						address="Hybrid"
-						work="Founded Smoove to transform the moving experience with a pioneering online platform, Smoove.homes. Spearheaded full-stack development, integrating Next.js, Twilio, Mapbox, and Firebase to deliver a seamless service from booking to payment. Collaborated on UX/UI for an intuitive user journey, and innovated operational systems using Slack and Stripe, enhancing efficiency and security. Drove continuous engagement, building a loyal community through targeted communications."
+						work="Pioneered a digital platform to revolutionize the moving experience, leading the charge in full-stack development with advanced web technologies. Focused on crafting intuitive user journeys through collaborative UX/UI design and operational innovation, enhancing both efficiency and security. My commitment to engagement fostered a strong community, underscored by effective communication strategies."
 					/>
 
 					<Details
