@@ -12,13 +12,15 @@ export default function Home() {
 	return (
 		<>
 			<Head>
-				<title>Rabah Babaci</title>
+				<title>Home</title>
 				<meta
 					name="description"
-					content="Explore Rabah Babaci's Next.js developer portfolio and 
+					content="Explore Rabah Babaci's Web Development portfolio and 
         discover the latest webapp projects and software engineering articles. 
         Showcase your skills as a full-stack developer and software engineer."
 				/>
+				<meta name="viewport" content="width=device-width, initial-scale=1" />
+				<meta name="robots" content="index, follow" />
 			</Head>
 
 			<TransitionEffect />
