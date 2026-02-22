@@ -1,158 +1,85 @@
 ```md
-# 👋 Hi, I'm [Your Name]
+# Portfolio Website
 
-[![Live Site](https://img.shields.io/badge/Live%20Site-Online-22c55e?style=for-the-badge)](https://yourdomain.com)
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)](./LICENSE)
+Personal portfolio built with **Next.js** to showcase projects, skills, and experience.
 
-Welcome to my portfolio website repository.  
-This project showcases my work, skills, and projects in **[your field: software engineering / data science / product / design]**.
+## Tech Stack
 
-🌐 **Live:** https://yourdomain.com
+- **Framework:** Next.js 13
+- **Language:** JavaScript (React 18)
+- **Styling:** Tailwind CSS
+- **Animation:** Framer Motion
+- **Linting:** ESLint (Next config)
 
----
-
-## 🚀 About This Project
-
-This portfolio is built to:
-- Present selected projects with clear outcomes
-- Highlight my technical stack and capabilities
-- Provide an easy way to contact me
-- Serve as a living hub for my work and growth
-
----
-
-## 🧰 Tech Stack
-
-- **Frontend:** [React / Next.js / Vue / HTML-CSS-JS]
-- **Styling:** [Tailwind CSS / CSS Modules / Sass]
-- **Animations/UI:** [Framer Motion / GSAP / etc.]
-- **Deployment:** [Vercel / Netlify / GitHub Pages]
-- **Other:** [TypeScript, ESLint, Prettier, etc.]
-
----
-
-## 📂 Project Structure
+## Project Structure
 
 ```bash
 .
-├── public/              # Static assets
+├── public/              # Static assets (images, icons, etc.)
 ├── src/
 │   ├── components/      # Reusable UI components
-│   ├── sections/        # Page sections (Hero, Projects, Contact...)
-│   ├── data/            # Portfolio/project data
-│   ├── styles/          # Global and module styles
-│   └── pages/           # Route/page files (if applicable)
-├── .env.example         # Environment variables template
-├── package.json
-└── README.md
+│   ├── pages/           # App routes/pages
+│   └── styles/          # Global/component styles
+├── next.config.js
+├── tailwind.config.js
+├── postcss.config.js
+└── package.json
 ```
 
----
+## Getting Started
 
-## ✨ Features
+### 1) Clone the repository
 
-- Responsive design across desktop/tablet/mobile
-- Clean project showcase with links and descriptions
-- About, skills, and contact sections
-- SEO-friendly metadata
-- Fast performance and accessibility-minded structure
-
----
-
-## 🛠️ Getting Started
-
-### 1) Clone the repo
 ```bash
-git clone https://github.com/your-username/your-portfolio-repo.git
-cd your-portfolio-repo
+git clone https://github.com/rabahbabaci/Portfolio-Website.git
+cd Portfolio-Website
 ```
 
 ### 2) Install dependencies
+
 ```bash
 npm install
-# or
-yarn
-# or
-pnpm install
 ```
 
-### 3) Run locally
+### 3) Run the development server
+
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
 ```
 
-Open `http://localhost:3000` (or the port shown in terminal).
+Open [http://localhost:3000](http://localhost:3000)
 
----
+## Available Scripts
 
-## 🔧 Configuration
+- `npm run dev` — start dev server
+- `npm run build` — build for production
+- `npm run start` — run production build
+- `npm run lint` — run ESLint
 
-If your project uses environment variables, create a local `.env` file:
+## Deployment
 
-```bash
-cp .env.example .env
-```
+This project can be deployed on **Vercel** (recommended) or any platform that supports Next.js.
 
-Add your values (API keys, contact form service IDs, analytics IDs, etc.).
+### Vercel quick deploy
 
----
-
-## 📸 Screenshots
-
-> Add screenshots/GIFs here to preview the UI.
-
-```md
-![Home Page](./public/screenshots/home.png)
-![Projects Section](./public/screenshots/projects.png)
-```
-
----
-
-## 📈 Performance & Quality
-
-- Lighthouse optimized (performance, accessibility, SEO)
-- Clean, reusable component architecture
-- Linting/formatting configured for consistency
-
----
-
-## 🚢 Deployment
-
-This site is deployed on **[Vercel / Netlify / GitHub Pages]**.
-
-### Example (Vercel)
-1. Push repo to GitHub
+1. Push this repo to GitHub
 2. Import project in Vercel
-3. Set environment variables
-4. Deploy
+3. Deploy (defaults should work)
+
+## Roadmap
+
+- Improve project case-study sections
+- Add SEO metadata and OG tags
+- Add analytics
+- Improve accessibility score (Lighthouse)
+
+## Contact
+
+- GitHub: [@rabahbabaci](https://github.com/rabahbabaci)
 
 ---
 
-## 🤝 Contact
-
-If you want to collaborate or discuss opportunities:
-
-- **Email:** your.email@example.com
-- **LinkedIn:** https://linkedin.com/in/your-handle
-- **GitHub:** https://github.com/your-username
-- **Portfolio:** https://yourdomain.com
-
----
-
-## 📄 License
-
-This project is licensed under the **MIT License**.  
-See [LICENSE](./LICENSE) for details.
-
----
-
-## ⭐ If you like this repo
-
-Please consider starring it — it helps visibility and supports my work.
+If you find this useful, feel free to star the repo.
 ```
 
-If you want, I can also generate a **custom version filled with your exact stack + links + project highlights** so it’s ready to commit with zero edits.
+If you want, I can give you a **v2 README** that’s more “founder-grade” (better personal branding + recruiter/client conversion style) instead of this clean technical one.
