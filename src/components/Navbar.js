@@ -11,7 +11,6 @@ import {
 } from './Icons';
 import { motion } from 'framer-motion';
 import { useThemeSwitch } from './Hooks/useThemeSwitch';
-import { HireMe } from './HireMe';
 
 const CustomLink = ({ href, title, className = '' }) => {
   const router = useRouter();
@@ -256,7 +255,6 @@ const Navbar = () => {
         <Logo />
       </div>
 
-      <HireMe />
     </header>
   );
 };
