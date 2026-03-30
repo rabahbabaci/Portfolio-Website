@@ -13,7 +13,8 @@ import TransitionEffect from "@/components/TransitionEffect";
 
 const FramerImage = motion(Image);
 
-const FeaturedProject = ({ type, title, summary, img, link, github, github2, github2Label }) => {
+const FeaturedProject = ({ type, title, summary, img, link, github, github2 }) => {
+	const mainHref = link || github;
 	return (
 		<article className="relative flex w-full h-auto items-center  justify-between rounded-3xl rounded-br-2xl border border-solid border-dark bg-light p-11 shadow-2xl  dark:border-light dark:bg-dark  lg:flex-col lg:p-8 xs:rounded-2xl  xs:rounded-br-3xl xs:p-4">
 			<div
@@ -23,7 +24,7 @@ const FeaturedProject = ({ type, title, summary, img, link, github, github2, git
 			/>
 
 			<Link
-				href={link}
+				href={mainHref}
 				target={"_blank"}
 				className="w-1/2 cursor-pointer overflow-hidden rounded-lg lg:w-full">
 				<FramerImage
@@ -44,7 +45,7 @@ const FeaturedProject = ({ type, title, summary, img, link, github, github2, git
 					{type}
 				</span>
 				<Link
-					href={link}
+					href={mainHref}
 					target={"_blank"}
 					className="underline-offset-2 hover:underline">
 					<h2 className="my-2 w-full text-left text-4xl font-bold lg:text-3xl xs:text-2xl">
@@ -82,83 +83,18 @@ const FeaturedProject = ({ type, title, summary, img, link, github, github2, git
 							Frontend
 						</Link>
 					)}
-					<Link
-						href={link}
-						target={"_blank"}
-						className="ml-4 rounded-lg
+					{link && (
+						<Link
+							href={link}
+							target={"_blank"}
+							className="ml-4 rounded-lg
              bg-dark p-2 px-6 text-lg font-semibold text-light dark:bg-light dark:text-dark
              sm:px-4 sm:text-base
             "
-						aria-label={title}>
-						Visit Project
-					</Link>
-				</div>
-			</div>
-		</article>
-	);
-};
-
-const Project = ({ title, type, img, link, github }) => {
-	return (
-		<article
-			className="relative flex h-auto w-full flex-col items-center justify-center rounded-2xl  rounded-br-2xl
-      border  border-solid  border-dark bg-light p-6  shadow-2xl dark:border-light dark:bg-dark
-      xs:p-4
-      ">
-			<div
-				className="absolute  top-0 -right-3 -z-10 h-[103%] w-[102%] rounded-[2rem] rounded-br-3xl bg-dark
-         dark:bg-light  md:-right-2 md:w-[101%] xs:h-[102%]
-        xs:rounded-[1.5rem]  "
-			/>
-
-			<Link
-				href={link}
-				target={"_blank"}
-				className="w-full cursor-pointer overflow-hidden rounded-lg">
-				<FramerImage
-					src={img}
-					alt={title}
-					className="h-auto w-full"
-					whileHover={{ scale: 1.05 }}
-					transition={{ duration: 0.2 }}
-					sizes="(max-width: 768px) 100vw,
-              (max-width: 1200px) 50vw,
-              33vw"
-				/>
-			</Link>
-
-			<div className="mt-4 flex w-full flex-col items-start justify-between">
-				<span className="text-xl font-medium text-primary dark:text-primaryDark lg:text-lg md:text-base">
-					{type}
-				</span>
-
-				<Link
-					href={link}
-					target={"_blank"}
-					className="underline-offset-2 hover:underline">
-					<h2 className="my-2 w-full text-left text-3xl font-bold lg:text-2xl ">
-						{title}
-					</h2>
-				</Link>
-				<div className="flex w-full items-center  justify-between">
-					<Link
-						href={link}
-						target={"_blank"}
-						className="rounded text-lg
-            font-medium underline md:text-base
-            "
-						aria-label={title}>
-						Visit
-					</Link>
-					<Link
-						href={github}
-						target={"_blank"}
-						className="w-8 md:w-6"
-						aria-label={title}>
-						<motion.section whileHover={{ y: -2 }} whileTap={{ scale: 0.9 }}>
-							<GithubIcon />
-						</motion.section>
-					</Link>
+							aria-label={title}>
+							Visit Project
+						</Link>
+					)}
 				</div>
 			</div>
 		</article>
@@ -209,20 +145,21 @@ export default function Projects() {
 							/>
 						</div>
 
-						<div className="col-span-6 sm:col-span-12">
-							<Project
+						<div className="col-span-12">
+							<FeaturedProject
 								type="Data Science Capstone"
 								title="ListIQ"
+								summary="A seller intelligence module that tells resale sellers where to list, at what price, and how fast an item will sell. Scrapes eBay, Poshmark, and Depop to build price regression and sell-through prediction models. UC Berkeley DATA 198 capstone built for Phia."
 								img={listiqImg}
-								link="https://github.com/rabahbabaci/ListIQ"
 								github="https://github.com/rabahbabaci/ListIQ"
 							/>
 						</div>
 
-						<div className="col-span-6 sm:col-span-12">
-							<Project
+						<div className="col-span-12">
+							<FeaturedProject
 								type="Startup / Online Moving Platform"
 								title="SMOOVE"
+								summary="Founded and operated a fully online moving company. Built the entire platform from scratch: vehicle selection, transparent per-minute pricing, real-time booking, Stripe payment processing, and a customer dashboard. Ran the business for over two years."
 								img={smooveImg}
 								link="https://smoove-two.vercel.app"
 								github="https://github.com/rabahbabaci/Smoove"

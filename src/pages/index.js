@@ -40,16 +40,14 @@ export default function Home() {
 
 						<div className="flex w-1/2 flex-col items-center self-center lg:w-full lg:text-center">
 							<AnimatedText
-								text="Building at the intersection of data science and software engineering."
+								text="Building at the Intersection of Data Science and Software Engineering."
 								className="!text-left !text-6xl xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-3xl"
 							/>
 							<p className="my-4 text-base font-medium md:text-sm sm:!text-xs">
-								I&apos;m Rabah, a UC Berkeley Data Science student (4.0 GPA)
-								who also builds full-stack production software. From founding
-								and operating SMOOVE, a real online moving platform, to
-								geospatial equity research and predictive modeling, I bring a
-								rare combination of analytical depth and shipping ability.
-								Seeking Data Science/Analytics and Software Engineering roles.
+								UC Berkeley Data Science student (4.0 GPA) who ships production
+								software. I build real products, from optimization engines to
+								geospatial analytics, and I&apos;m seeking Data Science and
+								Software Engineering roles.
 							</p>
 
 							<div className="mt-2 flex items-center self-start lg:self-center">

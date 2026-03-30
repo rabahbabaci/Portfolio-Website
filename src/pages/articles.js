@@ -20,7 +20,7 @@ export default function Articles() {
 				className={`w-full mb-16 flex flex-col items-center justify-center dark:text-light overflow-hidden`}>
 				<Layout className="pt-16">
 					<AnimatedText
-						text="Words Can Change the World!"
+						text="Articles"
 						className="!text-8xl !leading-tight mb-16 lg:!text-7xl sm:!text-6xl xs:!text-4xl sm:mb-8"
 					/>
 
