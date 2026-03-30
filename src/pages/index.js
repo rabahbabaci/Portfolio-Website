@@ -12,12 +12,10 @@ export default function Home() {
 	return (
 		<>
 			<Head>
-				<title>Home</title>
+				<title>Rabah Babaci | Data Science & Software Engineering</title>
 				<meta
 					name="description"
-					content="Explore Rabah Babaci's Web Development portfolio and 
-        discover the latest webapp projects and software engineering articles. 
-        Showcase your skills as a full-stack developer and software engineer."
+					content="Rabah Babaci — UC Berkeley Data Science student and full-stack software engineer. Explore projects spanning data analytics, geospatial analysis, and production web applications."
 				/>
 				<meta name="viewport" content="width=device-width, initial-scale=1" />
 				<meta name="robots" content="index, follow" />
@@ -42,19 +40,21 @@ export default function Home() {
 
 						<div className="flex w-1/2 flex-col items-center self-center lg:w-full lg:text-center">
 							<AnimatedText
-								text="Turning vision into reality with code and design."
+								text="Building at the intersection of data science and software engineering."
 								className="!text-left !text-6xl xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-3xl"
 							/>
 							<p className="my-4 text-base font-medium md:text-sm sm:!text-xs">
-								Dedicated to transforming concepts into reality, I excel as a
-								Full Stack Developer, crafting seamless digital experiences.
-								Delve into my portfolio of diverse projects, where creativity
-								meets functionality in the realm of software development.
+								I&apos;m Rabah, a UC Berkeley Data Science student (4.0 GPA)
+								who also builds full-stack production software. From founding
+								and operating SMOOVE — a real online moving platform — to
+								geospatial equity research and predictive modeling, I bring a
+								rare combination of analytical depth and shipping ability.
+								Seeking Data Science/Analytics and Software Engineering roles.
 							</p>
 
 							<div className="mt-2 flex items-center self-start lg:self-center">
 								<Link
-									href="https://www.canva.com/design/DAF8QP9RjU0/KmgEIBWt6v0egTa4KlhSpA/view?utm_content=DAF8QP9RjU0&utm_campaign=designshare&utm_medium=link&utm_source=editor"
+									href="/resume.pdf"
 									target={"_blank"}
 									className={`flex items-center rounded-lg border-2 border-solid bg-dark p-2.5 px-6 text-lg font-semibold
             capitalize text-light hover:border-dark hover:bg-transparent hover:text-dark 
@@ -66,7 +66,7 @@ export default function Home() {
 								</Link>
 
 								<Link
-									href="mailto:4rabah@gmail.com"
+									href="mailto:rabahbabaci@berkeley.edu"
 									target="_blank"
 									className="ml-4 text-lg font-medium capitalize text-dark underline 
                   dark:text-light md:text-base">

@@ -54,21 +54,12 @@ const Experience = () => {
 				/>
 				<ul className="w-full flex flex-col items-start justify-between ml-4 xs:ml-2">
 					<Details
-						position="Full Stack Engineer"
-						company="Smoove"
-						companyLink="https://smoove.homes"
-						time="November 2022 - February 2024"
+						position="Founder & Full Stack Engineer"
+						company="SMOOVE"
+						companyLink="https://smoove-two.vercel.app"
+						time="December 2022 - April 2025"
 						address="Hybrid"
-						work="Pioneered a digital platform to revolutionize the moving experience, leading the charge in full-stack development with advanced web technologies. Focused on crafting intuitive user journeys through collaborative UX/UI design and operational innovation, enhancing both efficiency and security. My commitment to engagement fostered a strong community, underscored by effective communication strategies."
-					/>
-
-					<Details
-						position="Full Stack Web Developer"
-						company="Yassir"
-						companyLink="https://yassir.com"
-						time="March 2021 - November 2022"
-						address="Remote"
-						work="At Yassir, I played a pivotal role as a Full Stack Web Developer, enhancing our super app with user-driven features like an efficient ticket system for drivers, boosting service quality. Leveraged JavaScript and React.js for fluid front-end interfaces, while also fortifying back-end and database integrity. My efforts were key in fostering a culture of innovation, responding dynamically to the evolving needs of our diverse user base."
+						work="Founded and operated a fully online moving company. Built the entire platform from scratch — vehicle selection with transparent per-minute pricing, real-time booking and scheduling, Stripe payment integration, and a customer dashboard for tracking moves. Managed all aspects of the business including operations, customer service, and growth for over two years."
 					/>
 				</ul>
 			</div>

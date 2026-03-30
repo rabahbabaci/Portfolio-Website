@@ -38,11 +38,10 @@ export default function About() {
 	return (
 		<>
 			<Head>
-				<title>About Rabah</title>
+				<title>About Rabah | UC Berkeley Data Science</title>
 				<meta
 					name="description"
-					content="Learn more about Rabah Babaci, a Software Developer developer with a passion for creating innovative solutions. Discover tips for building a developer portfolio and insights on 
-        full-stack development, front-end development, and back-end development."
+					content="Learn more about Rabah Babaci — UC Berkeley Data Science student (4.0 GPA) and full-stack software engineer. Building at the intersection of data analytics and production software."
 				/>
 			</Head>
 
@@ -65,18 +64,20 @@ export default function About() {
 							</h2>
 
 							<p className="font-medium ">
-								👋 Hi, I&apos;m Rabah. I specialize in creating user-centered
-								digital experiences, driven by the desire to innovate. My
-								strengths lie in mastering new tech, problem-solving, and
-								enhancing website usability through responsive design and MVC
-								principles
+								I&apos;m Rabah — a Data Science student at UC Berkeley and a
+								full-stack software engineer. Before Berkeley, I completed a
+								Full-Stack Web Development program at Bloom Institute of
+								Technology, then founded and operated SMOOVE, an online moving
+								platform with live Stripe payments, for over two years.
 							</p>
 
 							<p className="my-4 font-medium">
-								I bring a design-first mindset to web and mobile applications,
-								prioritizing user needs. Eager to apply my expertise to projects
-								that innovate and inspire, I&apos;m ready to collaborate on
-								crafting impactful digital solutions.
+								At Berkeley, I&apos;ve combined rigorous coursework in data
+								science with hands-on projects: geospatial transit equity
+								research mentored by MTC, a resale intelligence capstone, and
+								a departure-time optimization engine. I speak Berber, French,
+								and Arabic, and I&apos;m seeking roles in Data Science/Analytics
+								and Software Engineering.
 							</p>
 						</div>
 						<div
@@ -92,7 +93,7 @@ export default function About() {
 							<Image
 								className="h-auto w-full rounded-2xl bg-dark"
 								src={profile}
-								alt="Codebucks"
+								alt="Rabah Babaci"
 								sizes="(max-width: 768px) 100vw,
               (max-width: 1200px) 50vw,
               33vw"
@@ -104,34 +105,34 @@ export default function About() {
             xl:items-center md:order-3">
 							<div className="flex flex-col items-end justify-center xl:items-center">
 								<span className="inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl">
-									<AnimatedNumberFramerMotion value={15} />+
+									<AnimatedNumberFramerMotion value={10} />+
 								</span>
 								<h2
-									className="mb-4 text-xl font-medium capitalize text-dark/75 dark:text-light/75 
+									className="mb-4 text-xl font-medium capitalize text-dark/75 dark:text-light/75
                 xl:text-center md:text-lg sm:text-base xs:text-sm">
-									satisfied clients
+									customers served
 								</h2>
 							</div>
 
 							<div className="flex flex-col items-end justify-center xl:items-center">
 								<span className="inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl">
-									<AnimatedNumberFramerMotion value={20} />+
+									<AnimatedNumberFramerMotion value={6} />+
 								</span>
 								<h2
-									className="mb-4 text-xl font-medium capitalize text-dark/75 dark:text-light/75 
+									className="mb-4 text-xl font-medium capitalize text-dark/75 dark:text-light/75
                 xl:text-center md:text-lg sm:text-base xs:text-sm">
-									projects completed
+									projects shipped
 								</h2>
 							</div>
 
 							<div className="flex flex-col items-end justify-center xl:items-center">
 								<span className="inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl">
-									<AnimatedNumberFramerMotion value={2} />+
+									<AnimatedNumberFramerMotion value={4} />+
 								</span>
 								<h2
-									className="mb-4 text-xl font-medium capitalize text-dark/75 dark:text-light/75 
+									className="mb-4 text-xl font-medium capitalize text-dark/75 dark:text-light/75
                 xl:text-center md:text-lg sm:text-base xs:text-sm">
-									Years of experience
+									years building
 								</h2>
 							</div>
 						</div>

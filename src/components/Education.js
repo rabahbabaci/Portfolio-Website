@@ -46,17 +46,24 @@ const Education = () => {
 				/>
 				<ul className="w-full flex flex-col items-start justify-between ml-4">
 					<Details
-						type="Full-Stack Web Development Bootcamp"
-						time="2019-2021"
-						place="Bloom Institute of Technology"
-						info="Completed a Full-Stack Web Development bootcamp at Bloomtech Institute, focusing on React, Redux, and Agile methodologies. Acquired hands-on skills for creating scalable web apps and adapting to the tech industry's pace."
+						type="BA in Data Science"
+						time="Expected May 2027"
+						place="University of California, Berkeley"
+						info="4.0 GPA. Coursework includes Data 100 (Principles and Techniques of Data Science), CYPLAN 101 (Urban Data Analytics), and Data Product Management."
 					/>
 
 					<Details
-						type="Bachelors of Civil Engineering Technology Technician"
-						time="2012-2016"
-						place="Université Mouloud Mammeri Tizi-Ouzou Algeria"
-						info="Completed Civil Engineering Technology program, focusing on structural design, construction management, and CAD. Gained key analytical and problem-solving skills, bridging engineering principles with software development. Prepared for tech industry challenges through practical learning."
+						type="AS in Data Science"
+						time="May 2025"
+						place="Laney College"
+						info="3.88 GPA. Built a strong foundation in statistics, programming, and data analysis before transferring to UC Berkeley."
+					/>
+
+					<Details
+						type="Certificate, Full-Stack Web Development"
+						time="January 2021"
+						place="Bloom Institute of Technology"
+						info="Completed an intensive full-stack web development program focusing on React, Redux, Node.js, and Agile methodologies. Acquired hands-on skills for building scalable web applications."
 					/>
 				</ul>
 			</div>

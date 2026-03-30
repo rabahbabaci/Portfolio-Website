@@ -5,17 +5,15 @@ import { motion } from "framer-motion";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
-import proj1 from "../../public/images/projects/shareMe.jpg";
-import proj2 from "../../public/images/projects/quickFix.jpg";
-import proj3 from "../../public/images/projects/conway.png";
-import proj4 from "../../public/images/projects/audio.jpg";
-import proj5 from "../../public/images/projects/portfolio.png";
-import proj6 from "../../public/images/projects/todo.jpg";
+import airbridgeImg from "../../public/images/projects/airbridge.png";
+import mtcImg from "../../public/images/projects/mtc.png";
+import listiqImg from "../../public/images/projects/listiq.png";
+import smooveImg from "../../public/images/projects/smoove.png";
 import TransitionEffect from "@/components/TransitionEffect";
 
 const FramerImage = motion(Image);
 
-const FeaturedProject = ({ type, title, summary, img, link, github }) => {
+const FeaturedProject = ({ type, title, summary, img, link, github, github2, github2Label }) => {
 	return (
 		<article className="relative flex w-full h-auto items-center  justify-between rounded-3xl rounded-br-2xl border border-solid border-dark bg-light p-11 shadow-2xl  dark:border-light dark:bg-dark  lg:flex-col lg:p-8 xs:rounded-2xl  xs:rounded-br-3xl xs:p-4">
 			<div
@@ -61,19 +59,28 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
 						href={github}
 						target={"_blank"}
 						className="w-10"
-						aria-label="Crypto Screener Application github link">
+						aria-label={`${title} github link`}>
 						<motion.section whileHover={{ y: -2 }} whileTap={{ scale: 0.9 }}>
 							<GithubIcon />
 						</motion.section>
 					</Link>
+					{github2 && (
+						<Link
+							href={github2}
+							target={"_blank"}
+							className="ml-2 rounded-lg bg-dark/10 dark:bg-light/10 px-3 py-1 text-sm font-medium"
+							aria-label={`${title} ${github2Label} github link`}>
+							{github2Label}
+						</Link>
+					)}
 					<Link
 						href={link}
 						target={"_blank"}
 						className="ml-4 rounded-lg
-             bg-dark p-2 px-6 text-lg font-semibold text-light dark:bg-light dark:text-dark 
+             bg-dark p-2 px-6 text-lg font-semibold text-light dark:bg-light dark:text-dark
              sm:px-4 sm:text-base
             "
-						aria-label="Crypto Screener Application">
+						aria-label={title}>
 						Visit Project
 					</Link>
 				</div>
@@ -85,8 +92,8 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
 const Project = ({ title, type, img, link, github }) => {
 	return (
 		<article
-			className="relative flex h-auto w-full flex-col items-center justify-center rounded-2xl  rounded-br-2xl 
-      border  border-solid  border-dark bg-light p-6  shadow-2xl dark:border-light dark:bg-dark 
+			className="relative flex h-auto w-full flex-col items-center justify-center rounded-2xl  rounded-br-2xl
+      border  border-solid  border-dark bg-light p-6  shadow-2xl dark:border-light dark:bg-dark
       xs:p-4
       ">
 			<div
@@ -153,10 +160,10 @@ export default function Projects() {
 	return (
 		<>
 			<Head>
-				<title>Rabah&apos;s Projects</title>
+				<title>Rabah&apos;s Projects | UC Berkeley Data Science & Software Engineering</title>
 				<meta
 					name="description"
-					content="Discover the latest webapp projects created by Rabah Babaci, a Software developer with expertise in React.js and full-stack development. Browse software engineering articles and tutorials for tips on creating your own portfolio."
+					content="Explore projects by Rabah Babaci — from departure-time optimization engines and geospatial transit equity analysis to full-stack startups. UC Berkeley Data Science and Software Engineering."
 				/>
 			</Head>
 
@@ -171,65 +178,48 @@ export default function Projects() {
 					<div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
 						<div className="col-span-12">
 							<FeaturedProject
-								type="Featured Project"
-								title="SHARE ME"
-								summary="A dynamic social media app powered by React JS, Tailwind CSS, and a suite of advanced tools. Leveraged Redux Toolkit and Redux Persist for state management, seamlessly integrated Google Auth2 Login, and utilized Sanity CMS for content management. Users enjoy seamless posting, editing, and commenting on their own and other's posts, enhancing the social interaction experience."
-								img={proj1}
-								link="https://shareme-picz.netlify.app/login"
-								github="https://github.com/rbabaci1/ShareMe"
-							/>
-						</div>
-
-						<div className="col-span-6 sm:col-span-12">
-							<Project
-								type="Cellular Automaton Simulation"
-								title="Conway Game Of Life"
-								img={proj3}
-								link="https://conway-game-of-life-roan.vercel.app"
-								github="https://github.com/rbabaci1/Conway-s-Game-Of-Life"
-							/>
-						</div>
-
-						<div className="col-span-6 sm:col-span-12">
-							<Project
-								type="Website"
-								title="Quick Fix Car Glass"
-								img={proj2}
-								link="https://quickfixcarglass.com"
-								github="https://github.com/rbabaci1/quick-fix-car-glass"
+								type="Full-Stack Application"
+								title="AirBridge"
+								summary="A door-to-gate departure decision engine that computes personalized 'leave-home-by' times using real-time flight data, traffic estimates, TSA wait models, and terminal walking distances. Returns a segment-by-segment timeline with three confidence profiles (Safety, Sweet, Risk). Covers 10 major US airports. Built with FastAPI, PostgreSQL, Supabase auth, and a React/Vite frontend with shadcn/ui."
+								img={airbridgeImg}
+								link="https://airbridge.live"
+								github="https://github.com/rabahbabaci/airbridge-backend"
+								github2="https://github.com/rabahbabaci/airbridge-frontend"
+								github2Label="Frontend Repo"
 							/>
 						</div>
 
 						<div className="col-span-12">
 							<FeaturedProject
-								type="E-commerce Website"
-								title="AUDIO OASIS"
-								summary="Discover Audio Oasis, a cutting-edge E-commerce platform where technology meets shopping. Created with precision using Next.js for seamless performance, Sanity for flexible content management, and Stripe for secure payments. Dive into a world of audio and electronic accessories, from speakers to smartwatches, headphones, and more. Elevate your shopping experience with a fusion of innovation and style."
-								img={proj4}
-								link="https://ecommerce-omega-peach.vercel.app"
-								github="https://github.com/rbabaci1/Audio_Oasis"
+								type="Geospatial Data Science"
+								title="MTC Transit Access Equity"
+								summary="A CYPLAN 101 project mentored by the Metropolitan Transportation Commission (MTC) evaluating time-of-day transit accessibility in Alameda County. Computes AM Peak vs. Late Night travel-time matrices using the r5py routing engine, generates isochrones, and measures job accessibility gaps for Equity Priority Communities. Includes an interactive project website with maps and animated charts."
+								img={mtcImg}
+								link="https://rabahbabaci.github.io/MTC-Transit_Access_Equity/"
+								github="https://github.com/rabahbabaci/MTC-Transit_Access_Equity"
 							/>
 						</div>
 
 						<div className="col-span-6 sm:col-span-12">
 							<Project
-								type="Portfolio Website"
-								img={proj5}
-								title="React Portfolio Website"
-								link="https://portfolio-rbabaci1.vercel.app/"
-								github="https://github.com/rbabaci1/portfolio"
+								type="Data Science Capstone"
+								title="ListIQ"
+								img={listiqImg}
+								link="https://github.com/rabahbabaci/ListIQ"
+								github="https://github.com/rabahbabaci/ListIQ"
 							/>
 						</div>
 
 						<div className="col-span-6 sm:col-span-12">
 							<Project
-								type="Todo-List Website"
-								img={proj6}
-								title="You Can Do It"
-								link="https://youcandoit.netlify.app"
-								github="https://github.com/rbabaci1/Youcandoit_TodoList"
+								type="Startup — Online Moving Platform"
+								title="SMOOVE"
+								img={smooveImg}
+								link="https://smoove-two.vercel.app"
+								github="https://github.com/rabahbabaci/Smoove"
 							/>
 						</div>
+
 					</div>
 				</Layout>
 			</main>

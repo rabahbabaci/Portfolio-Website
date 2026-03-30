@@ -118,7 +118,7 @@ const Navbar = () => {
           <motion.a
             target={'_blank'}
             className='w-7 mx-3'
-            href='https://github.com/rbabaci1'
+            href='https://github.com/rabahbabaci'
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.9 }}
             aria-label='Checkout my github profile'
@@ -206,7 +206,7 @@ const Navbar = () => {
             <motion.a
               target={'_blank'}
               className='w-6 m-1 mx-3 bg-light rounded-full dark:bg-dark sm:mx-1'
-              href='#'
+              href='https://github.com/rabahbabaci'
               whileHover={{ y: -2 }}
               whileTap={{ scale: 0.9 }}
               aria-label='Checkout my github profile'
@@ -217,7 +217,7 @@ const Navbar = () => {
             <motion.a
               target={'_blank'}
               className='w-6 m-1 mr-3 sm:mx-1'
-              href='#'
+              href='https://twitter.com/RabahBabaci'
               whileHover={{ y: -2 }}
               whileTap={{ scale: 0.9 }}
               aria-label='Checkout my twitter profile'
@@ -227,7 +227,7 @@ const Navbar = () => {
             <motion.a
               target={'_blank'}
               className='w-6 m-1 mx-3 sm:mx-1'
-              href='#'
+              href='https://www.linkedin.com/in/babaci'
               whileHover={{ y: -2 }}
               whileTap={{ scale: 0.9 }}
               aria-label='Checkout my linkedin profile'
