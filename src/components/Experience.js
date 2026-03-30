@@ -59,7 +59,7 @@ const Experience = () => {
 						companyLink="https://smoove-two.vercel.app"
 						time="December 2022 - April 2025"
 						address="Hybrid"
-						work="Founded and operated a fully online moving company. Built the entire platform from scratch — vehicle selection with transparent per-minute pricing, real-time booking and scheduling, Stripe payment integration, and a customer dashboard for tracking moves. Managed all aspects of the business including operations, customer service, and growth for over two years."
+						work="Founded and operated a fully online moving company. Built the entire platform from scratch: vehicle selection with transparent per-minute pricing, real-time booking and scheduling, Stripe payment integration, and a customer dashboard for tracking moves. Managed all aspects of the business including operations, customer service, and growth for over two years."
 					/>
 				</ul>
 			</div>

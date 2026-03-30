@@ -66,11 +66,20 @@ const FeaturedProject = ({ type, title, summary, img, link, github, github2, git
 					</Link>
 					{github2 && (
 						<Link
+							href={github}
+							target={"_blank"}
+							className="ml-2 rounded-lg bg-dark/10 dark:bg-light/10 px-3 py-1 text-sm font-medium"
+							aria-label={`${title} backend github link`}>
+							Backend
+						</Link>
+					)}
+					{github2 && (
+						<Link
 							href={github2}
 							target={"_blank"}
 							className="ml-2 rounded-lg bg-dark/10 dark:bg-light/10 px-3 py-1 text-sm font-medium"
-							aria-label={`${title} ${github2Label} github link`}>
-							{github2Label}
+							aria-label={`${title} frontend github link`}>
+							Frontend
 						</Link>
 					)}
 					<Link
@@ -163,7 +172,7 @@ export default function Projects() {
 				<title>Rabah&apos;s Projects | UC Berkeley Data Science & Software Engineering</title>
 				<meta
 					name="description"
-					content="Explore projects by Rabah Babaci — from departure-time optimization engines and geospatial transit equity analysis to full-stack startups. UC Berkeley Data Science and Software Engineering."
+					content="Explore projects by Rabah Babaci, from departure-time optimization engines and geospatial transit equity analysis to full-stack startups. UC Berkeley Data Science and Software Engineering."
 				/>
 			</Head>
 
@@ -212,7 +221,7 @@ export default function Projects() {
 
 						<div className="col-span-6 sm:col-span-12">
 							<Project
-								type="Startup — Online Moving Platform"
+								type="Startup / Online Moving Platform"
 								title="SMOOVE"
 								img={smooveImg}
 								link="https://smoove-two.vercel.app"

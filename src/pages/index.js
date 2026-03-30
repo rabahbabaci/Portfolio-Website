@@ -15,7 +15,7 @@ export default function Home() {
 				<title>Rabah Babaci | Data Science & Software Engineering</title>
 				<meta
 					name="description"
-					content="Rabah Babaci — UC Berkeley Data Science student and full-stack software engineer. Explore projects spanning data analytics, geospatial analysis, and production web applications."
+					content="Rabah Babaci, UC Berkeley Data Science student and full-stack software engineer. Explore projects spanning data analytics, geospatial analysis, and production web applications."
 				/>
 				<meta name="viewport" content="width=device-width, initial-scale=1" />
 				<meta name="robots" content="index, follow" />
@@ -46,7 +46,7 @@ export default function Home() {
 							<p className="my-4 text-base font-medium md:text-sm sm:!text-xs">
 								I&apos;m Rabah, a UC Berkeley Data Science student (4.0 GPA)
 								who also builds full-stack production software. From founding
-								and operating SMOOVE — a real online moving platform — to
+								and operating SMOOVE, a real online moving platform, to
 								geospatial equity research and predictive modeling, I bring a
 								rare combination of analytical depth and shipping ability.
 								Seeking Data Science/Analytics and Software Engineering roles.

@@ -41,7 +41,7 @@ export default function About() {
 				<title>About Rabah | UC Berkeley Data Science</title>
 				<meta
 					name="description"
-					content="Learn more about Rabah Babaci — UC Berkeley Data Science student (4.0 GPA) and full-stack software engineer. Building at the intersection of data analytics and production software."
+					content="Learn more about Rabah Babaci, UC Berkeley Data Science student (4.0 GPA) and full-stack software engineer. Building at the intersection of data analytics and production software."
 				/>
 			</Head>
 
@@ -64,7 +64,7 @@ export default function About() {
 							</h2>
 
 							<p className="font-medium ">
-								I&apos;m Rabah — a Data Science student at UC Berkeley and a
+								I&apos;m Rabah, a Data Science student at UC Berkeley and a
 								full-stack software engineer. Before Berkeley, I completed a
 								Full-Stack Web Development program at Bloom Institute of
 								Technology, then founded and operated SMOOVE, an online moving
